@@ -17,4 +17,6 @@ def solve(values):
     if all(len(values[s]) == 1 for s in boxes): 
         return True
     else:
+        options = sorted(values.items(), key=operator.itemgetter(1))
+        
         pass
